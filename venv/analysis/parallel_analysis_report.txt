@@ -1,0 +1,66 @@
+## COMBINED PARALLEL ANALYSIS
+
+### File-Level Summary
+
+**Files with NO errors (9):**
+- `aggregation.diff`
+- `between.diff`
+- `create-drop.diff`
+- `like.diff`
+- `limit.diff`
+- `logical.diff`
+- `order_by.diff`
+- `select.diff`
+- `sets.diff`
+
+**Files with errors (1):**
+- `joins.diff`
+
+---
+
+### Aggregate Issue Breakdown
+
+Total issues found across all files: 26
+
+Issue breakdown:
+- Query Failures: 0
+- Element/Cell Mismatches: 20
+- Missing Rows: 3
+- Additional Rows: 3
+- Missing Columns: 0
+- Additional Columns: 0
+
+## DETAILS: Additional Rows (3)
+
+- joins.diff - Query #1: Extra line 10 in ./results/joins.res: 1102	Gerard	Bondur	Paris	France
+- joins.diff - Query #1: Extra line 28 in ./results/joins.res: 1702	Martin	Gerard	Paris	France
+- joins.diff - Query #1: Extra line 9 in ./results/joins.res: 1088	William	Patterson	Sydney	Australia
+
+## DETAILS: Element Mismatches (20)
+
+- joins.diff - Query #1: Line 20, mismatch: expected '1702', got '1501'
+- joins.diff - Query #1: Line 20, mismatch: expected 'France', got 'UK'
+- joins.diff - Query #1: Line 20, mismatch: expected 'Gerard', got 'Bott'
+- joins.diff - Query #1: Line 20, mismatch: expected 'Martin', got 'Larry'
+- joins.diff - Query #1: Line 20, mismatch: expected 'Paris', got 'London'
+- joins.diff - Query #1: Line 21, mismatch: expected '1621', got '1504'
+- joins.diff - Query #1: Line 21, mismatch: expected 'Japan', got 'UK'
+- joins.diff - Query #1: Line 21, mismatch: expected 'Mami', got 'Barry'
+- joins.diff - Query #1: Line 21, mismatch: expected 'Nishi', got 'Jones'
+- joins.diff - Query #1: Line 21, mismatch: expected 'Tokyo', got 'London'
+- joins.diff - Query #1: Line 27, mismatch: expected '1501', got '1621'
+- joins.diff - Query #1: Line 27, mismatch: expected 'Bott', got 'Nishi'
+- joins.diff - Query #1: Line 27, mismatch: expected 'Larry', got 'Mami'
+- joins.diff - Query #1: Line 27, mismatch: expected 'London', got 'Tokyo'
+- joins.diff - Query #1: Line 27, mismatch: expected 'UK', got 'Japan'
+- joins.diff - Query #1: Line 28, mismatch: expected '1504', got '1625'
+- joins.diff - Query #1: Line 28, mismatch: expected 'Barry', got 'Yoshimi'
+- joins.diff - Query #1: Line 28, mismatch: expected 'Jones', got 'Kato'
+- joins.diff - Query #1: Line 28, mismatch: expected 'London', got 'Tokyo'
+- joins.diff - Query #1: Line 28, mismatch: expected 'UK', got 'Japan'
+
+## DETAILS: Missing Rows (3)
+
+- joins.diff - Query #1: Extra line 16 in ./control_files/joins.ctr: 1102	Gerard	Bondur	Paris	France
+- joins.diff - Query #1: Extra line 22 in ./control_files/joins.ctr: 1625	Yoshimi	Kato	Tokyo	Japan
+- joins.diff - Query #1: Extra line 23 in ./control_files/joins.ctr: 1088	William	Patterson	Sydney	Australia

@@ -1,0 +1,12 @@
+Query #1:
+Extra line 9 in ./results/joins.res: 1088	William	Patterson	Sydney	Australia
+Extra line 10 in ./results/joins.res: 1102	Gerard	Bondur	Paris	France
+Extra line 16 in ./control_files/joins.ctr: 1102	Gerard	Bondur	Paris	France
+Line 20, mismatch(es): expected '1702', got '1501'; expected 'Martin', got 'Larry'; expected 'Gerard', got 'Bott'; expected 'Paris', got 'London'; expected 'France', got 'UK'
+Line 21, mismatch(es): expected '1621', got '1504'; expected 'Mami', got 'Barry'; expected 'Nishi', got 'Jones'; expected 'Tokyo', got 'London'; expected 'Japan', got 'UK'
+Extra line 22 in ./control_files/joins.ctr: 1625	Yoshimi	Kato	Tokyo	Japan
+Extra line 23 in ./control_files/joins.ctr: 1088	William	Patterson	Sydney	Australia
+Line 27, mismatch(es): expected '1501', got '1621'; expected 'Larry', got 'Mami'; expected 'Bott', got 'Nishi'; expected 'London', got 'Tokyo'; expected 'UK', got 'Japan'
+Line 28, mismatch(es): expected '1504', got '1625'; expected 'Barry', got 'Yoshimi'; expected 'Jones', got 'Kato'; expected 'London', got 'Tokyo'; expected 'UK', got 'Japan'
+Extra line 28 in ./results/joins.res: 1702	Martin	Gerard	Paris	France
+
