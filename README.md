@@ -1,1 +1,1 @@
-# Automated Database Testing using Scripting
+# Automated Database Testing using Shell Scripting
